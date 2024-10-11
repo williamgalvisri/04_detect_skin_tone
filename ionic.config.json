@@ -1,0 +1,7 @@
+{
+  "name": "04_skin_tone_detection",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
