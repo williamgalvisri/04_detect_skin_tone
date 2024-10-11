@@ -32,22 +32,24 @@ import '@ionic/react/css/palettes/dark.system.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import SkinColorAnalysisPage from './pages/SkinColorAnalyzerPage';
+import ObjectDetectionPage from './pages/ObjectDetectionPage';
 
 setupIonicReact();
 
 const App: React.FC = () => (
-  <IonApp style={{ backgroundColor: 'transparent' }}>
-    <IonReactRouter>
-      <IonRouterOutlet>
-        <Route exact path="/home">
-          <Home />
-        </Route>
-        <Route exact path="/">
-          <Redirect to="/home" />
-        </Route>
-      </IonRouterOutlet>
-    </IonReactRouter>
-  </IonApp>
+	<IonApp style={{ backgroundColor: 'transparent' }}>
+		<IonReactRouter>
+			<IonRouterOutlet>
+				<Route exact path="/home" component={Home} />
+				<Route exact path="/skin-color-analysis" component={SkinColorAnalysisPage} />
+				<Route exact path="/object-detection" component={ObjectDetectionPage} />
+				<Route exact path="/">
+					<Redirect to="/home" />
+				</Route>
+			</IonRouterOutlet>
+		</IonReactRouter>
+	</IonApp>
 );
 
 export default App;
