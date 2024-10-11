@@ -36,7 +36,7 @@ import './theme/variables.css';
 setupIonicReact();
 
 const App: React.FC = () => (
-  <IonApp>
+  <IonApp style={{ backgroundColor: 'transparent' }}>
     <IonReactRouter>
       <IonRouterOutlet>
         <Route exact path="/home">

@@ -1,0 +1,7 @@
+.color-box {
+    padding: 5px;
+    border-radius: 3px;
+    display: inline-block;
+    margin-bottom: 5px;
+    color: black;
+}
