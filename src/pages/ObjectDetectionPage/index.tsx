@@ -23,7 +23,7 @@ const ObjectDetectionPage: React.FC = () => {
                     <IonTitle>Detección de Objetos</IonTitle>
                 </IonToolbar>
             </IonHeader>
-            <IonContent fullscreen>
+            <IonContent fullscreen id='content'>
                 <CameraComponent onCapture={handleCapture} />
                 <PreviewImageModal isOpen={showPreviewImage} onClose={() => setShowPreviewImage(false)} photo={photo} />
             </IonContent>
